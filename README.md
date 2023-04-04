@@ -15,5 +15,3 @@ This portfolio website includes the following features:
 
 # Getting Started
 To view this website, simply open the index.html file in a web browser. You can also view it online at [reesechong.com](https://reesechong.com)
-
-Thank you for visiting my portfolio website! I hope you enjoy it as much as I enjoyed creating it.
