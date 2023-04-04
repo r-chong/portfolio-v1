@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>reesechong.com</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>reesechong.com</h1>
+		<nav>
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<li class="toggle-container">
+					<input type="checkbox" id="toggle" class="toggle-input">
+					<label for="toggle" class="toggle-label">Dark Mode</label>
+					<div class="toggle-display"></div>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section id="about">
+			<h2>About Me</h2>
+			<p>Hey there! I'm Reese, a high school student based in Ontario, Canada. I am passionate about programming and enjoy building React applications. </p>
+			<p>This website is currently being converted to React JS, so stay tuned!</p>
+			<div class="picture">
+				<img src="Assets\Professional_Headshot.png" alt="Your Picture">
+			</div>
+		</section>
+	
+		<section id="projects">
+			<h2>Projects</h2>
+			<ul>
+				<li><a href="#">Project 1</a></li>
+				<li><a href="#">Project 2</a></li>
+				<li><a href="#">Project 3</a></li>
+			</ul>
+		</section>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; Reese Chong</p>
+	</footer>
+
+	<script>
+		const toggleSwitch = document.querySelector('.toggle-input');
+	
+		function switchTheme(event) {
+			if (event.target.checked) {
+				document.documentElement.setAttribute('data-theme', 'dark');
+				localStorage.setItem('theme', 'dark');
+			} else {
+				document.documentElement.setAttribute('data-theme', 'light');
+				localStorage.setItem('theme', 'light');
+			}
+		}
+	
+		toggleSwitch.addEventListener('change', switchTheme, false);
+	
+		const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+	
+		if (currentTheme) {
+			document.documentElement.setAttribute('data-theme', currentTheme);
+	
+			if (currentTheme === 'dark') {
+				toggleSwitch.checked = true;
+			}
+		}
+	</script>
+</body>
+
+</html>
+

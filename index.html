@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>reesechong.com</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header>
+		<h1>reesechong.com</h1>
+		<nav>
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+    <main>
+        <section id="about" class="about-section">
+            <h2>About Me</h2>
+            <div class="about-flex-container">
+              <div class="about-text">
+                <p>Hey there! I'm Reese, a high school student based in Ontario, Canada. I am passionate about programming and enjoy building React applications. </p>
+                <br>
+                <p>This website is currently being converted to React JS, so stay tuned!</p>
+              </div>
+              <div class="picture">
+                <img src="Assets\Professional_Headshot.png" alt="Your Picture">
+              </div>
+            </div>
+          </section>
+    
+        <section id="projects" class="projects-section">
+            <h2>My GREATEST Projects</h2>
+            <ul>
+                <li><a href="react-spotty.html">React Spotify Web Player</a></li>
+                <li><a href="gpt-interview-bot.html">GPT-3.5 Interview Bot</a></li>
+                <li><a href="chat.html">Chat Website</a></li>
+            </ul>
+        </section>
+
+        <section id="links" class="links-section">
+            <h2>Easy Links</h2>
+            <ul>
+                <li><a href="https://github.com/r-chong">GitHub</a></li>
+                <li><a href="https://linkedin.com/in/reesechong">LinkedIn</a></li>
+                <li><a href="#">Email</a></li>
+            </ul>
+        </section>
+
+        <section id="links" class="links-section">
+            <h2>Why You Should Hire Me</h2>
+            <ul>
+                <li>Reason 1</li>
+                <li>Reason 2</li>
+                <li>Reason 3</li>
+                <li>Reason 4</li>
+                <li>Reason 5</li>
+                <li>Reason 6</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; Reese Chong</p>
+    </footer>
+    
+    <script>
+        const toggleSwitch = document.querySelector('.toggle-input');
+	
+        function switchTheme(event) {
+            if (event.target.checked) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'light');
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        toggleSwitch.addEventListener('change', switchTheme, false);
+
+        const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+        if (currentTheme) {
+            document.documentElement.setAttribute('data-theme', currentTheme);
+
+        if (currentTheme === 'dark') {
+            toggleSwitch.checked = true;
+        }
+    }
+    </script>
