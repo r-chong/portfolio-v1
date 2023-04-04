@@ -12,6 +12,13 @@
     scroll-behavior: smooth;
   }
 
+  span {
+    color: #4d7300;
+    /* color: #F07223; */
+    font-weight: bold;
+    text-decoration: none;
+  }
+
   body {
     margin: 0;
     padding: 0;
