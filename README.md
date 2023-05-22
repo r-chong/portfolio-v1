@@ -1,4 +1,4 @@
-# Portfolio
+# Portfolio v1
 
 ![image](https://user-images.githubusercontent.com/75395781/229686292-213fefb6-1f57-46f1-9b13-95fbcbcd6443.png)
 
@@ -10,8 +10,8 @@ This portfolio website includes the following features:
 
 * Simple and intuitive navigation menu that directs visitors to different sections of the website
 * About section that includes a brief bio and my skills
- *Projects section that highlights my work and includes links to relevant websites or repositories
- *Responsive design that adjusts to different screen sizes for optimal viewing on desktop, tablet, or mobile devices
+*Projects section that highlights my work and includes links to relevant websites or repositories
+*Responsive design that adjusts to different screen sizes for optimal viewing on desktop, tablet, or mobile devices
 
 # Getting Started
 To view this website, simply open the index.html file in a web browser. You can also view it online at [reesechong.com](https://reesechong.com)
